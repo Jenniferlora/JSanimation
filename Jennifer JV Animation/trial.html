@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+	<style type="text/css">
+
+	body{
+
+	background-image: url("images/background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+	}
+	
+	#container{
+	position:absolute;
+	width:250px;
+	height:150px;
+	bottom:10px;
+
+	}
+
+	#images{
+	background-color: red;
+	width:250px;
+	height:150px;
+	bottom:10px;
+	}
+
+
+	/*#image1{z-index: 0;}
+	#image2{z-index: 3;}
+	#image3{z-index: 2;}
+	#image4{z-index: 1;}*/
+
+	.group{
+	width:150px;
+	height:150px;
+	position: absolute;
+/*	left: 0;*/
+	}
+
+</style>
+<body>
+
+<div id="container">
+<div id="images">
+<img src="images/baby1.gif" id="image1" class="group" >
+
+<img src="images/baby2.gif" id="image2" class="group">
+
+<img src="images/baby3.gif" id="image3" class="group">
+
+<img src="images/baby4.gif" id="image4" class="group">
+</div>
+
+
+</div>
+ 
+ <script type="text/javascript">
+
+
+
+function moveright(){
+// var audioname= new Audio("nameoffile.mp3");
+// audioname.play();
+var elem= document.getElementById("images");
+var pos=0;
+var id=setInterval(gonow,40);
+
+
+function gonow(){
+	if (pos<=200){
+		pos++;
+		elem.style.left = pos + "px";
+	}else{
+		clearInterval("id");
+	}
+}
+}
+
+// function swapimg(){
+
+// var elem1= document.getElementById("images2");
+// var pos1=200;
+// var id1=setInterval(swapnow,50);
+	
+// 	function swapnow(){
+// 	if (pos1=200){
+// 		elem1.src = "images/baby2.gif";
+// 		elem1.style.left = pos1 + "px";
+
+// 	}else{
+		
+// 		clearInterval("id1");
+// 	}
+// }
+// }
+
+moveright();
+
+</script>
+</body>
+</html>

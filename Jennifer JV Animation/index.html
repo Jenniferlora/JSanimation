@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+
+<div id="container">
+
+<div id="images">
+<img src="images/baby1.gif" id="pics" width="350" height="250">
+</div>
+
+</div>
+ 
+ <script type="text/javascript">
+
+
+var music = new Audio("Monanamusic.mp3");
+
+function moveright(){
+music.play();
+var elem= document.getElementById("images");
+var pos=0;
+var id=setInterval(gonow,50);
+var newpic=document.getElementById("pics")
+
+
+
+function gonow(){
+	if (pos<=200){
+		pos++;
+		elem.style.left = pos + "px";
+	}
+	else if(pos==201){
+		document.getElementById("pics").src="images/baby2.gif"
+		pos++;
+	}else if(pos<300){
+		pos++
+		elem.style.left = pos + "px";}
+	else if(pos==301)
+	{	document.getElementById("pics").src="images/baby3.gif"
+		pos++;
+	}else if(pos<350){
+		pos++
+		elem.style.left = pos + "px";
+	}else if(pos==400){
+		document.getElementById("pics").src="images/baby4.gif"
+		pos++;
+	}else if(pos<451){
+		pos++
+		elem.style.left = pos + "px";
+	}else if(pos==500){
+		document.getElementById("pics").src="images/moana.gif"
+		elem.style.left = pos + "px";
+	}else if(pos<600){
+		pos++
+		elem.style.left = pos + "px";
+	}else if(pos==651){
+		document.getElementById("pics").src="images/moana2.gif"
+		pos++;
+	}else if(pos<900){
+		pos++
+		elem.style.left = pos + "px";
+	}
+	}
+}
+
+
+
+
+moveright();
+// function swapimg(){
+
+// var elem1= document.getElementById("images2");
+// var pos1=200;
+// var id1=setInterval(swapnow,50);
+	
+// 	function swapnow(){
+// 	if (pos1<=400){
+// 		pos1++;
+// 		elem1.style.left = pos1 + "px";
+
+// 	}else if (pos){
+// 		elem1.src = "images/baby2.gif";
+		
+// 	}
+// }
+// }
+// function begin(){
+// moveright();
+// swapimg();
+// }
+// begin ();
+</script>
+</body>
+</html>

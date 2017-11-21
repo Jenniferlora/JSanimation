@@ -1,0 +1,28 @@
+	body{
+		background-image: url("images/background.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-size: 100vw 100vh;
+	}
+	
+	#container{
+	display: flex;
+	}
+
+	#images{
+		position: absolute;
+		bottom: 10px;
+		display: inline-flex;
+		}
+	#images2{
+		position: absolute;
+		bottom: 10px;
+		display: inline-flex;
+		left:250px;
+		}
+
+	#baby2{
+		opacity: 1;
+		left: 50px;
+		
+		}
